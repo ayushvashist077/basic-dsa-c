@@ -40,7 +40,7 @@ void lastt1(int p)
 void lastt2(int p)
 {
     int nu;
-    printf("\nEnter coeff. for power %d: ",p);
+    printf("\nEnter co-effecient for power %d: ",p);
     scanf("%d",&nu);
     newnd=create(nu);
     newnd->pow=p;
@@ -137,9 +137,9 @@ void mull(struct node *p1, struct node *p2)
     for(int i=0;i < ((d1+1)*(1+d2));i++)
     {
     newnd=create(0);
-    if(p4f==NULL && p4l==NULL)
+    if(p4f==0 && p4l==0)
     {
-        newnd->next=NULL;
+        newnd->next=0;
         p4f=p4l=newnd;
     }
     else
